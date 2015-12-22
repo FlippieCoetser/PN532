@@ -1,0 +1,24 @@
+{
+  "name": "nxp-pn532",
+  "version": "1.0.0",
+  "description": "TypeScript Library for NXP PN532",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlippieCoetser/PN532.git"
+  },
+  "keywords": [
+    "PN532",
+    "RFID",
+    "NFC"
+  ],
+  "author": "Flippie Coetser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlippieCoetser/PN532/issues"
+  },
+  "homepage": "https://github.com/FlippieCoetser/PN532#readme"
+}
