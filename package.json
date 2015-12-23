@@ -1,6 +1,6 @@
 {
   "name": "nxp-pn532",
-  "version": "1.0.2-0",
+  "version": "1.0.3-0",
   "description": "TypeScript Library for NXP PN532",
   "main": "index.js",
   "scripts": {
