@@ -1,4 +1,4 @@
-export default class PN532 {
+export declare class PN532 {
     testProperty: string;
     constructor(property: string);
     testFunction(): void;
