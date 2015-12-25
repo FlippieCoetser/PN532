@@ -1,8 +1,9 @@
 {
   "name": "nxp-pn532",
-  "version": "1.0.5-0",
+  "version": "1.0.7-0",
   "description": "TypeScript Library for NXP PN532",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,4 +1,6 @@
-export class PN532 {
+/// <reference path="../typings/tsd.d.ts" />
+
+class PN532 {
 	testProperty: string;
 	constructor(property: string) {
 		this.testProperty = property
@@ -9,3 +11,5 @@ export class PN532 {
 	}
 
 }
+
+module.exports = PN532;
