@@ -1,6 +1,6 @@
 {
   "name": "typescript.pn532",
-  "version": "1.0.0-0",
+  "version": "1.0.1-0",
   "description": "TypeScript Library for PN532 CMOS manufactured by NXP",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
