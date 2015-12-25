@@ -1,2 +1,2 @@
-# NXP-PN532
-TypeScript Library for NXP PN532 RFID
+# PN532
+TypeScript Library for PN532 RFID CMOS manufactured by NXP

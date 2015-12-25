@@ -14,7 +14,14 @@
   "keywords": [
     "PN532",
     "RFID",
-    "NFC"
+    "NFC",
+    "NXP"
+  ],
+   "files": [
+    "README.md",
+    "lib/index.js",
+    "lib/index.d.ts",
+    "src/index.ts"
   ],
   "author": "Flippie Coetser",
   "license": "MIT",
