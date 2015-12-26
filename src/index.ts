@@ -75,7 +75,7 @@ class PN532 {
 	}
 
 	getErrorCode(code: number):void {
-		console.log(Error[code]);
+		console.log(PN532.Error[code]);
 	}
 }
 
