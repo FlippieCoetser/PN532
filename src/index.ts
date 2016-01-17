@@ -4,7 +4,6 @@ interface diagnose {
 	Parameters?: number;
 }
 
-
 class PN532 {
 	// List of Commands // 
 	static Command = {
@@ -129,6 +128,5 @@ module PN532 {
 		Antenna = 0X07
 	}
 }
-
 
 module.exports = PN532;
