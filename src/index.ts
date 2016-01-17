@@ -76,7 +76,7 @@ class PN532 {
 		0X2B: 'Card Removed',
 		0X2C: 'NFC Mismatch',
 		0X2D: 'Over Current',
-		0X2E: 'NAD Missing'
+		0X2E: 'NAD Missing',
 	}
 
 	static Status = {
