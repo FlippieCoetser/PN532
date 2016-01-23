@@ -10,6 +10,6 @@
         "sourceMap": false
     },
     "files": [
-        "src/index.ts"
+        "src/PN532.ts"
     ]
 }

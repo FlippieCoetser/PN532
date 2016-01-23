@@ -1,9 +1,4 @@
 /// <reference path="../typings/tsd.d.ts" />
-interface diagnose {
-	Test: PN532.Tests;
-	Parameters?: number;
-}
-
 class PN532 {
 	// List of Commands // 
 	static Command = {
@@ -102,7 +97,7 @@ class PN532 {
 		}
 	}
 
-	Diagnose(input: diagnose): Buffer {
+	Diagnose(input: PN532.diagnose): Buffer {
 		console.log('Test:' + input.Test);
 		input.Parameters && console.log('Input:' + input.Parameters);	 
 		return new Buffer('test');
@@ -118,7 +113,12 @@ class PN532 {
 }
 
 module PN532 {
-	export const enum Tests {
+	export interface diagnose {
+	Test: PN532.Tests;
+	Parameters?: number;
+    }
+    
+    export const enum Tests {
 		Communication = 0X00,
 		ROM = 0X01,
 		RAM = 0X02,
@@ -129,7 +129,8 @@ module PN532 {
 	}
 }
 
-module.exports = PN532
+module.exports = PN532;
+exports.PN532 = PN532;
 
 
 
