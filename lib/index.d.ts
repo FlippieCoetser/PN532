@@ -1,9 +1,9 @@
 /// <reference path="../typings/tsd.d.ts" />
-interface diagnose {
+export interface diagnose {
     Test: PN532.Tests;
     Parameters?: number;
 }
-declare class PN532 {
+export declare class PN532 {
     static Command: {
         Miscellanous: {
             Diagnose: number;
@@ -100,7 +100,7 @@ declare class PN532 {
     getFirmwareVersion(): void;
     getErrorCode(code: number): void;
 }
-declare module PN532 {
+export declare module PN532 {
     const enum Tests {
         Communication = 0,
         ROM = 1,
