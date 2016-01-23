@@ -108,11 +108,11 @@ class PN532 {
 		return new Buffer('test');
 	}
 
-	getFirmwareVersion():void {
+	getFirmwareVersion(): void {
 		console.log(PN532.Command.Miscellanous.GetFirmwareVersion);
 	}
 
-	getErrorCode(code: number):void {
+	getErrorCode(code: number): void {
 		console.log(PN532.Error[code]);
 	}
 }
