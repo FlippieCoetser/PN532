@@ -97,7 +97,7 @@ export class PN532 {
 		}
 	}
 
-	Diagnose(input: PN532.diagnose): Buffer {
+	Diagnose(input: diagnose): Buffer {
 		console.log('Test:' + input.Test);
 		input.Parameters && console.log('Input:' + input.Parameters);	 
 		return new Buffer('test');
@@ -113,7 +113,7 @@ export class PN532 {
 }
 
 export interface diagnose {
-	Test: PN532.Tests;
+	Test: Tests;
 	Parameters?: number;
     }
     
@@ -127,8 +127,8 @@ export const enum Tests {
 		Antenna = 0X07
 	}
 
-module.exports = PN532;
-exports.PN532 = PN532;
+
+
 
 
 
