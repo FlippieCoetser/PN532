@@ -1,5 +1,5 @@
 /// <reference path="../typings/tsd.d.ts" />
-class PN532 {
+export class PN532 {
 	// List of Commands // 
 	static Command = {
 		Miscellanous: {
@@ -112,13 +112,12 @@ class PN532 {
 	}
 }
 
-module PN532 {
-	export interface diagnose {
+export interface diagnose {
 	Test: PN532.Tests;
 	Parameters?: number;
     }
     
-    export const enum Tests {
+export const enum Tests {
 		Communication = 0X00,
 		ROM = 0X01,
 		RAM = 0X02,
@@ -127,7 +126,6 @@ module PN532 {
 		PresenceDetection = 0X06,
 		Antenna = 0X07
 	}
-}
 
 module.exports = PN532;
 exports.PN532 = PN532;
