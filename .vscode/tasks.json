@@ -9,6 +9,7 @@
 // A task runner that calls the Typescript compiler (tsc) and
 // compiles based on a tsconfig.json file that is present in
 // the root of the folder open in VSCode
+
 {
 	"version": "0.1.0",
 
@@ -28,7 +29,6 @@
 	// in the output.
 	"problemMatcher": "$tsc"
 }
-
 // A task runner configuration for gulp. Gulp provides a less task
 // which compiles less to css.
 /*
