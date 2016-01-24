@@ -91,20 +91,22 @@ export declare class PN532 {
             0X10: string;
         };
     };
-    Diagnose(input: diagnose): Buffer;
+    Diagnose(input: PN532.diagnose): Buffer;
     getFirmwareVersion(): void;
     getErrorCode(code: number): void;
 }
-export interface diagnose {
-    Test: Tests;
-    Parameters?: number;
-}
-export declare const enum Tests {
-    Communication = 0,
-    ROM = 1,
-    RAM = 2,
-    Polling = 4,
-    Echo = 5,
-    PresenceDetection = 6,
-    Antenna = 7,
+export declare module PN532 {
+    interface diagnose {
+        Test: Tests;
+        Parameters?: number;
+    }
+    const enum Tests {
+        Communication = 0,
+        ROM = 1,
+        RAM = 2,
+        Polling = 4,
+        Echo = 5,
+        PresenceDetection = 6,
+        Antenna = 7,
+    }
 }
