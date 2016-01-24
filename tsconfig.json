@@ -11,8 +11,6 @@
         "noResolve": true
     },
     "files": [
-        "src/PN532.ts",
-        "typings/node/node.d.ts",
-        "typings/tsd.d.ts"
+        "src/PN532.ts"
     ]
 }
