@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 export class PN532 {
 	// List of Commands // 
 	static Command = {
