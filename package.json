@@ -1,9 +1,12 @@
 {
   "name": "typescript.pn532",
-  "version": "1.0.21-0",
+  "version": "1.0.22-0",
   "description": "TypeScript Library for PN532 CMOS manufactured by NXP",
   "main": "lib/PN532.js",
   "typings": "lib/PN532.d.ts",
+  "typescript": {
+      "definitions": "lib/PN532.d.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,11 +21,9 @@
     "NXP"
   ],
    "files": [
-    "README.md",
     "lib/PN532.js",
     "lib/PN532.d.ts",
-    "src/PN532.ts",
-    "tsd.json"
+    "src/PN532.ts"
   ],
   "author": "Flippie Coetser",
   "license": "MIT",
