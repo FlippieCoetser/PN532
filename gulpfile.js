@@ -13,6 +13,7 @@ gulp.task('Build', function(){
       tsResult.dts.pipe(gulp.dest('lib')),
       tsResult.js.pipe(gulp.dest('lib'))     
    ]);
+   
 });
   
   
