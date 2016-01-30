@@ -1,31 +1,18 @@
 'use strict'
-
 var gulp = require('gulp'),
-  bump = require('gulp-bump'),
-  git = require('gulp-git'),
-  filter = require('gulp-filter'),
-  tagVersion = require('gulp-tag-version'),
-  inquirer = require('inquirer');
+   tsc = require('gulp-typescript'),
+   merge = require('merge2');
+   
+var tsProject = tsc.createProject('tsconfig.json');
+
+gulp.task('Build', function(){
+   var tsResult = tsProject.src()
+       .pipe(tsc(tsProject));
+   
+   return merge([
+      tsResult.dts.pipe(gulp.dest('lib')),
+      tsResult.js.pipe(gulp.dest('lib'))     
+   ]);
+});
   
   
-  gulp.task('bump', function(){
-      var questions = [
-          {
-              type: 'input',
-              name: 'bump',
-              message: 'Are you sure you want to bump the prerelease version? [Y/N]'
-          }
-      ]
-      
-      inquirer.prompt( questions, function( answers){
-          if(answers.bump === 'Y'){
-              return gulp.src(['./package.json'])
-                .pipe(bump({type: 'prerelease'}))
-                .pipe(gulp.dest('./'))
-                .pipe(git.commit('bump pathc version'))
-                .pipe(filter('package.json'))
-                .pipe(tagVersion());
-          }
-      })
-    
-  })
