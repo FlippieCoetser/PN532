@@ -13,6 +13,7 @@
     "files": [
         "src/PN532.ts",
         "typings/tsd.d.ts",
-        "typings/node/node.d.ts"
+        "typings/node/node.d.ts",
+        "typings/promise/promise.d.ts"
     ]
 }

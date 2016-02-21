@@ -1,3 +1,5 @@
+/// <reference path="../typings/tsd.d.ts" />
+
 export class PN532 {
 	// List of Commands // 
 	static Command = {
@@ -101,9 +103,10 @@ export class PN532 {
 		input.Parameters && console.log('Input:' + input.Parameters);	 
 		return new Buffer('test');
 	}
-
-	getFirmwareVersion(): void {
-		console.log(PN532.Command.Miscellanous.GetFirmwareVersion);
+    
+	getFirmwareVersion() {
+		console.log('PN532.Command.Miscellanous.GetFirmwareVersion');
+        
 	}
 
 	getErrorCode(code: number): void {

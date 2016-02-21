@@ -5,7 +5,7 @@
   "main": "lib/PN532.js",
   "typings": "lib/PN532.d.ts",
   "typescript": {
-      "definitions": "lib/PN532.d.ts"
+    "definitions": "lib/PN532.d.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
     "NFC",
     "NXP"
   ],
-   "files": [
+  "files": [
     "lib/PN532.js",
     "lib/PN532.d.ts",
     "src/PN532.ts"
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/FlippieCoetser/PN532/issues"
   },
-  "homepage": "https://github.com/FlippieCoetser/PN532#readme"
+  "homepage": "https://github.com/FlippieCoetser/PN532#readme",
+  "dependencies": {
+    "promise": "^7.1.1"
+  }
 }
